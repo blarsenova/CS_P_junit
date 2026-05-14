@@ -11,7 +11,14 @@ public class Calculator {
             return DoubleStream.of(operands)
                     .reduce(1, (a, b) -> a * b);
         }
+
+    public static double divide(int i, int i1) {
+        if (i1 == 0) {
+            throw new ArithmeticException("Division by zero");
+        }
+            return (double) i/i1;
     }
+}
 
 
 
