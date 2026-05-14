@@ -19,4 +19,10 @@ class CalculatorTest {
                     () -> assertEquals(4, Calculator.multiply(-2, -2)),
                     () -> assertEquals(0, Calculator.multiply(1, 0)));
         }
+
+    @Test
+    @DisplayName("Multiply three numbers")
+    void multiplyThreeNums() {
+        assertEquals(384, Calculator.multiply(12,32,1));
+    }
     }
